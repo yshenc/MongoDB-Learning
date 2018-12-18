@@ -1,0 +1,692 @@
+MongoDB shell version v4.0.3
+connecting to: mongodb://127.0.0.1:27017
+Implicit session: session { "id" : UUID("965502fa-0252-41bc-a3f7-dc9a19a53a91") }
+MongoDB server version: 4.0.3
+loading file: /users/yuchenshen/Desktop/MongoDB_Query.js
+Start of Question 1
+Question 1.1
+Sucessful Creation
+
+
+Question 1.2
+{
+	"_id" : 1,
+	"name" : {
+		"first" : "John",
+		"last" : "Backus"
+	},
+	"birth" : ISODate("1924-12-03T05:00:00Z"),
+	"death" : ISODate("2007-03-17T04:00:00Z"),
+	"contribs" : [
+		"Fortran",
+		"ALGOL",
+		"Backus-Naur Form",
+		"FP"
+	],
+	"awards" : [
+		{
+			"award" : "W.W. McDowell Award",
+			"year" : 1967,
+			"by" : "IEEE Computer Society"
+		},
+		{
+			"award" : "National Medal of Science",
+			"year" : 1975,
+			"by" : "National Science Foundation"
+		},
+		{
+			"award" : "Turing Award",
+			"year" : 1977,
+			"by" : "ACM"
+		},
+		{
+			"award" : "Draper Prize",
+			"year" : 1993,
+			"by" : "National Academy of Engineering"
+		}
+	]
+}
+{
+	"_id" : 4,
+	"name" : {
+		"first" : "Kristen",
+		"last" : "Nygaard"
+	},
+	"birth" : ISODate("1926-08-27T04:00:00Z"),
+	"death" : ISODate("2002-08-10T04:00:00Z"),
+	"contribs" : [
+		"OOP",
+		"Simula"
+	],
+	"awards" : [
+		{
+			"award" : "Rosing Prize",
+			"year" : 1999,
+			"by" : "Norwegian Data Association"
+		},
+		{
+			"award" : "Turing Award",
+			"year" : 2001,
+			"by" : "ACM"
+		},
+		{
+			"award" : "IEEE John von Neumann Medal",
+			"year" : 2001,
+			"by" : "IEEE"
+		}
+	]
+}
+{
+	"_id" : 5,
+	"name" : {
+		"first" : "Ole-Johan",
+		"last" : "Dahl"
+	},
+	"birth" : ISODate("1931-10-12T04:00:00Z"),
+	"death" : ISODate("2002-06-29T04:00:00Z"),
+	"contribs" : [
+		"OOP",
+		"Simula"
+	],
+	"awards" : [
+		{
+			"award" : "Rosing Prize",
+			"year" : 1999,
+			"by" : "Norwegian Data Association"
+		},
+		{
+			"award" : "Turing Award",
+			"year" : 2001,
+			"by" : "ACM"
+		},
+		{
+			"award" : "IEEE John von Neumann Medal",
+			"year" : 2001,
+			"by" : "IEEE"
+		}
+	]
+}
+{
+	"_id" : ObjectId("51e062189c6ae665454e301d"),
+	"name" : {
+		"first" : "Dennis",
+		"last" : "Ritchie"
+	},
+	"birth" : ISODate("1941-09-09T04:00:00Z"),
+	"death" : ISODate("2011-10-12T04:00:00Z"),
+	"contribs" : [
+		"UNIX",
+		"C"
+	],
+	"awards" : [
+		{
+			"award" : "Turing Award",
+			"year" : 1983,
+			"by" : "ACM"
+		},
+		{
+			"award" : "National Medal of Technology",
+			"year" : 1998,
+			"by" : "United States"
+		},
+		{
+			"award" : "Japan Prize",
+			"year" : 2011,
+			"by" : "The Japan Prize Foundation"
+		}
+	]
+}
+
+
+Question 1.3
+{
+	"_id" : 1,
+	"name" : {
+		"first" : "John",
+		"last" : "Backus"
+	},
+	"birth" : ISODate("1924-12-03T05:00:00Z"),
+	"death" : ISODate("2007-03-17T04:00:00Z"),
+	"contribs" : [
+		"Fortran",
+		"ALGOL",
+		"Backus-Naur Form",
+		"FP"
+	],
+	"awards" : [
+		{
+			"award" : "W.W. McDowell Award",
+			"year" : 1967,
+			"by" : "IEEE Computer Society"
+		},
+		{
+			"award" : "National Medal of Science",
+			"year" : 1975,
+			"by" : "National Science Foundation"
+		},
+		{
+			"award" : "Turing Award",
+			"year" : 1977,
+			"by" : "ACM"
+		},
+		{
+			"award" : "Draper Prize",
+			"year" : 1993,
+			"by" : "National Academy of Engineering"
+		}
+	]
+}
+{
+	"_id" : 6,
+	"name" : {
+		"first" : "Guido",
+		"last" : "van Rossum"
+	},
+	"birth" : ISODate("1956-01-31T05:00:00Z"),
+	"contribs" : [
+		"Python"
+	],
+	"awards" : [
+		{
+			"award" : "Award for the Advancement of Free Software",
+			"year" : 2001,
+			"by" : "Free Software Foundation"
+		},
+		{
+			"award" : "NLUUG Award",
+			"year" : 2003,
+			"by" : "NLUUG"
+		}
+	]
+}
+{
+	"_id" : 8,
+	"name" : {
+		"first" : "Yukihiro",
+		"aka" : "Matz",
+		"last" : "Matsumoto"
+	},
+	"birth" : ISODate("1965-04-14T04:00:00Z"),
+	"contribs" : [
+		"Ruby"
+	],
+	"awards" : [
+		{
+			"award" : "Award for the Advancement of Free Software",
+			"year" : "2011",
+			"by" : "Free Software Foundation"
+		}
+	]
+}
+{
+	"_id" : 9,
+	"name" : {
+		"first" : "James",
+		"last" : "Gosling"
+	},
+	"birth" : ISODate("1955-05-19T04:00:00Z"),
+	"contribs" : [
+		"Java"
+	],
+	"awards" : [
+		{
+			"award" : "The Economist Innovation Award",
+			"year" : 2002,
+			"by" : "The Economist"
+		},
+		{
+			"award" : "Officer of the Order of Canada",
+			"year" : 2007,
+			"by" : "Canada"
+		}
+	]
+}
+{
+	"_id" : 10,
+	"name" : {
+		"first" : "Martin",
+		"last" : "Odersky"
+	},
+	"contribs" : [
+		"Scala"
+	]
+}
+{
+	"_id" : 20,
+	"name" : {
+		"first" : "Alex",
+		"last" : "Chen"
+	},
+	"birth" : ISODate("1933-08-27T04:00:00Z"),
+	"death" : ISODate("1984-11-07T04:00:00Z"),
+	"contribs" : [
+		"C++",
+		"Simula"
+	],
+	"awards" : [
+		{
+			"award" : "WPI Award",
+			"year" : 1977,
+			"by" : "WPI"
+		}
+	]
+}
+{
+	"_id" : 30,
+	"name" : {
+		"first" : "David",
+		"last" : "Mark"
+	},
+	"birth" : ISODate("1911-04-12T04:00:00Z"),
+	"death" : ISODate("2000-11-07T04:00:00Z"),
+	"contribs" : [
+		"C++",
+		"FP",
+		"Lisp"
+	],
+	"awards" : [
+		{
+			"award" : "WPI Award",
+			"year" : 1963,
+			"by" : "WPI"
+		},
+		{
+			"award" : "Turing Award",
+			"year" : 1966,
+			"by" : "ACM"
+		}
+	]
+}
+
+
+Question 1.4
+{
+	"name" : {
+		"first" : "Dennis",
+		"last" : "Ritchie"
+	},
+	"contribs" : [
+		"UNIX",
+		"C"
+	]
+}
+
+
+Question 1.5
+{
+	"_id" : 6,
+	"name" : {
+		"first" : "Guido",
+		"last" : "van Rossum"
+	},
+	"birth" : ISODate("1956-01-31T05:00:00Z"),
+	"contribs" : [
+		"Python",
+		"OOP"
+	],
+	"awards" : [
+		{
+			"award" : "Award for the Advancement of Free Software",
+			"year" : 2001,
+			"by" : "Free Software Foundation"
+		},
+		{
+			"award" : "NLUUG Award",
+			"year" : 2003,
+			"by" : "NLUUG"
+		}
+	]
+}
+
+
+Question 1.6
+{
+	"_id" : 20,
+	"name" : {
+		"first" : "Alex",
+		"last" : "Chen"
+	},
+	"birth" : ISODate("1933-08-27T04:00:00Z"),
+	"death" : ISODate("1984-11-07T04:00:00Z"),
+	"contribs" : [
+		"C++",
+		"Simula"
+	],
+	"awards" : [
+		{
+			"award" : "WPI Award",
+			"year" : 1977,
+			"by" : "WPI"
+		}
+	],
+	"comments" : [
+		"He taught in 3 universities",
+		"died from cancer",
+		"lived in CA"
+	]
+}
+
+
+Question 1.7
+{
+	"_id" : "C++",
+	"people" : [
+		{
+			"first" : "David",
+			"last" : "Mark"
+		},
+		{
+			"first" : "Alex",
+			"last" : "Chen"
+		}
+	]
+}
+{
+	"_id" : "Simula",
+	"people" : [
+		{
+			"first" : "Alex",
+			"last" : "Chen"
+		},
+		{
+			"first" : "Ole-Johan",
+			"last" : "Dahl"
+		},
+		{
+			"first" : "Kristen",
+			"last" : "Nygaard"
+		}
+	]
+}
+
+
+Question 1.8
+"ACM"
+"IEEE Computer Society"
+"National Academy of Engineering"
+"National Science Foundation"
+"Inamori Foundation"
+" British Computer Society"
+"Data Processing Management Association"
+"United States"
+"IEEE"
+"Norwegian Data Association"
+"Free Software Foundation"
+"NLUUG"
+"The Japan Prize Foundation"
+"Canada"
+"The Economist"
+"WPI"
+
+
+Question 1.9
+8
+0
+
+
+Question 1.10
+2
+0
+
+
+Question 1.11
+{
+	"_id" : 30,
+	"name" : {
+		"first" : "David",
+		"last" : "Mark"
+	},
+	"birth" : ISODate("1911-04-12T04:00:00Z"),
+	"contribs" : [
+		"C++",
+		"FP",
+		"Lisp"
+	],
+	"awards" : [
+		{
+			"award" : "WPI Award",
+			"year" : 1965,
+			"by" : "WPI"
+		},
+		{
+			"award" : "Turing Award",
+			"year" : 1966,
+			"by" : "ACM"
+		}
+	]
+}
+
+
+Question 1.12
+{ "_id" : 30, "contribs" : [ "C++", "FP", "Lisp" ] }
+{
+	"_id" : 30,
+	"contribs" : [
+		"C++",
+		"FP",
+		"Lisp",
+		"UNIVAC",
+		"compiler",
+		"FLOW-MATIC",
+		"COBOL"
+	]
+}
+
+
+Question 1.13
+{ "_id" : { "first" : "Ole-Johan", "last" : "Dahl" }, "count" : 2 }
+{ "_id" : { "first" : "Kristen", "last" : "Nygaard" }, "count" : 2 }
+
+
+Question 1.14
+{
+	"_id" : ObjectId("51e062189c6ae665454e301d"),
+	"name" : {
+		"first" : "Dennis",
+		"last" : "Ritchie"
+	},
+	"birth" : ISODate("1941-09-09T04:00:00Z"),
+	"contribs" : [
+		"UNIX",
+		"C"
+	],
+	"awards" : [
+		{
+			"award" : "Turing Award",
+			"year" : 1983,
+			"by" : "ACM"
+		},
+		{
+			"award" : "National Medal of Technology",
+			"year" : 1998,
+			"by" : "United States"
+		}
+	]
+}
+
+
+Question 1.15
+{
+	"_id" : 1,
+	"name" : {
+		"first" : "John",
+		"last" : "Backus"
+	},
+	"birth" : ISODate("1924-12-03T05:00:00Z"),
+	"contribs" : [
+		"Fortran",
+		"ALGOL",
+		"Backus-Naur Form",
+		"FP"
+	],
+	"awards" : [
+		{
+			"award" : "W.W. McDowell Award",
+			"year" : 1967,
+			"by" : "IEEE Computer Society"
+		},
+		{
+			"award" : "National Medal of Science",
+			"year" : 1975,
+			"by" : "National Science Foundation"
+		},
+		{
+			"award" : "Turing Award",
+			"year" : 1977,
+			"by" : "ACM"
+		},
+		{
+			"award" : "Draper Prize",
+			"year" : 1993,
+			"by" : "National Academy of Engineering"
+		}
+	]
+}
+
+
+
+
+Start of Question 2
+Question 2.1
+{  "_id" : "Award for the Advancement of Free Software",  "value" : 1 }
+{  "_id" : "Computer Sciences Man of the Year",  "value" : 1 }
+{  "_id" : "Distinguished Fellow",  "value" : 1 }
+{  "_id" : "Draper Prize",  "value" : 1 }
+{  "_id" : "IEEE John von Neumann Medal",  "value" : 2 }
+{  "_id" : "Kyoto Prize",  "value" : 1 }
+{  "_id" : "NLUUG Award",  "value" : 1 }
+{  "_id" : "National Medal of Science",  "value" : 2 }
+{  "_id" : "National Medal of Technology",  "value" : 2 }
+{  "_id" : "Officer of the Order of Canada",  "value" : 1 }
+{  "_id" : "Rosing Prize",  "value" : 2 }
+{  "_id" : "The Economist Innovation Award",  "value" : 1 }
+{  "_id" : "Turing Award",  "value" : 6 }
+{  "_id" : "W. W. McDowell Award",  "value" : 1 }
+{  "_id" : "W.W. McDowell Award",  "value" : 1 }
+{  "_id" : "WPI Award",  "value" : 2 }
+
+
+Question 2.2
+{ "_id" : { "year" : 1911 }, "id" : [ 30 ] }
+{ "_id" : { "year" : 1956 }, "id" : [ 6 ] }
+{ "_id" : { "year" : 1933 }, "id" : [ 20 ] }
+{ "_id" : { "year" : 1955 }, "id" : [ 9 ] }
+{ "_id" : { "year" : 1965 }, "id" : [ 8 ] }
+{
+	"_id" : {
+		"year" : 1941
+	},
+	"id" : [
+		ObjectId("51e062189c6ae665454e301d")
+	]
+}
+{ "_id" : { "year" : null }, "id" : [ 10 ] }
+{ "_id" : { "year" : 1931 }, "id" : [ 5 ] }
+{ "_id" : { "year" : 1926 }, "id" : [ 4 ] }
+{ "_id" : { "year" : 1906 }, "id" : [ 3 ] }
+{
+	"_id" : {
+		"year" : 1927
+	},
+	"id" : [
+		ObjectId("51df07b094c6acd67e492f41")
+	]
+}
+{ "_id" : { "year" : 1924 }, "id" : [ 1 ] }
+
+
+Question 2.3
+Largest Id
+{
+	"_id" : ObjectId("51e062189c6ae665454e301d"),
+	"name" : {
+		"first" : "Dennis",
+		"last" : "Ritchie"
+	},
+	"birth" : ISODate("1941-09-09T04:00:00Z"),
+	"contribs" : [
+		"UNIX",
+		"C"
+	],
+	"awards" : [
+		{
+			"award" : "Turing Award",
+			"year" : 1983,
+			"by" : "ACM"
+		},
+		{
+			"award" : "National Medal of Technology",
+			"year" : 1998,
+			"by" : "United States"
+		}
+	]
+}
+Smallest Id
+{
+	"_id" : 1,
+	"name" : {
+		"first" : "John",
+		"last" : "Backus"
+	},
+	"birth" : ISODate("1924-12-03T05:00:00Z"),
+	"contribs" : [
+		"Fortran",
+		"ALGOL",
+		"Backus-Naur Form",
+		"FP"
+	],
+	"awards" : [
+		{
+			"award" : "W.W. McDowell Award",
+			"year" : 1967,
+			"by" : "IEEE Computer Society"
+		},
+		{
+			"award" : "National Medal of Science",
+			"year" : 1975,
+			"by" : "National Science Foundation"
+		},
+		{
+			"award" : "Turing Award",
+			"year" : 1977,
+			"by" : "ACM"
+		},
+		{
+			"award" : "Draper Prize",
+			"year" : 1993,
+			"by" : "National Academy of Engineering"
+		}
+	]
+}
+
+
+
+
+Start of Question 3
+Question 3.1
+[
+	{
+		"Name" : "Databases",
+		"Level" : 1
+	},
+	{
+		"Name" : "Programming",
+		"Level" : 2
+	},
+	{
+		"Name" : "Books",
+		"Level" : 3
+	}
+]
+
+
+Question 3.2
+the height is: 4
+
+
+Question 3.3
+parent of dbm: Databases
+
+
+Question 3.4
+[ "Programming", "Databases", "Languages", "MongoDB", "dbm" ]
